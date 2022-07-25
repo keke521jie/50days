@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #333;
+}
+
+.container{
+    padding: 50px;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #fff;
+    transform-origin: top left;
+    transition: transform .5s;
+    .circle-container{
+        position: fixed;
+        left: -100px;
+        top: -100px;
+        .circle{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #ff7070;
+            transition: all .5s;
+            #open,#close{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                list-style: none;
+                background-color: #ff7070;
+                right: 30px;
+                bottom: 30px;
+                border: none;
+                cursor: pointer;
+                .icon{
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+            #close{
+                right: 0px;
+                left: 30px;
+            }
+        }
+    }
+    .content{
+        margin: 50px auto;
+        max-width: 1000px;
+        h1,h3,p{
+            color: #333;
+        }
+        small{
+            font-style: italic;
+            color: #555;
+        }
+        p{
+            margin: 16px 0;
+            font-size: 16px;
+        }
+        img{
+            max-width: 100%;
+            margin-top: 16px;
+        }
+    }
+}
+.show-nav{
+    transform: rotate(-20deg);
+    .circle-container{
+        .circle{
+            transform: rotate(-70deg);
+        }
+    }
+}
+
+//左下角导航区
+.nav-show{
+    left: -200px;
+}
+nav{
+    position: fixed;
+    left: 0;
+    bottom: 40px;
+    transition: all .5s;
+    .nav-list{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        list-style: none;
+        color: #fff;
+        .item{
+            .icon{
+                font-size: 25px;
+                margin-right: 10px;
+            }
+            &:nth-child(2){
+                margin-left: 20px;
+            }
+            &:nth-child(3){
+                margin-left: 40px;
+            }
+        }
+    }
+}
