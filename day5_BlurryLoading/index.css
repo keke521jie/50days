@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bj {
+  width: 100vw;
+  height: 100vh;
+  background: url(mn.jpeg) no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(0px);
+}
+.container {
+  position: absolute;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 700;
+  opacity: 1;
+}
