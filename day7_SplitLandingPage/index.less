@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    .box-left,
+    .box-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25vh;
+        width: 50%;
+        height: 100%;
+        background: url(./ps.jpg) no-repeat;
+        background-size: cover;
+        transition: all 1.5s;
+        overflow: hidden;
+        h3{
+            font-size: 60px;
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+        }
+        .btn{
+            margin-top: 5px;
+            width: 17vw;
+            height: 12vh;
+            border: 4px solid #fff;
+            line-height: 11vh;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            white-space: nowrap;
+            text-transform: uppercase;
+            &:hover{
+                background-color: #5254eb;
+                border: 4px solid #5254eb;
+            }
+        }
+        
+    }
+    .box-right{
+        background: url(./xbox.jpg) no-repeat;
+        background-size: cover;
+        .btn{
+            &:hover{
+                background-color: #007c27;
+                border: 4px solid #007c27;
+            }
+        }
+    }
+}
+
